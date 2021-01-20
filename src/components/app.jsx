@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   calculate = (val) => {
-    let { previous, current, next} = this.state;
+    let { previous, current, next } = this.state;
     if (previous.length > 0) {
       current = eval(String(previous[previous.length - 1] + current));
       this.setState({ current, previous, next: true });
@@ -64,8 +64,8 @@ class App extends Component {
         { this.state.previous.length > 0 ? <div className="floaty-last">{this.state.previous[this.state.previous.length - 1]}</div> : null }
         <h1>Calculator</h1>
         <input className="result" type="text" value={this.state.current} />
-        {buttons.map((btn, i) => {
-          return <Buttons key={btn.symbol} symbol={btn.symbol} cols={btn.cols} action={ symbol => btn.action(symbol) } />;
+        {buttons.map((btn) => {
+          return <Buttons key={btn.symbol} symbol={btn.symbol} cols={btn.cols} action={symbol => btn.action(symbol)} />;
         })}
       </div>
     );

@@ -3,29 +3,6 @@ body {
   background: #f4f4f4 !important;
 }
 
-a {
-  box-sizing: border-box;
-  text-align: center;
-  min-width: 192px;
-  text-decoration: none;
-  color: black !important;
-  transition: box-shadow 0.3s;
-  &:hover {
-    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.10);
-    text-decoration: none;
-  }
-}
-
-ul {
-  list-style: none;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
-}
-
-
 /* Calculator *****************************************************************/
 
 .column-3 {
@@ -69,18 +46,6 @@ input.result {
   top: 10px;
   color: #aaa;
 }
-/* Show ***********************************************************************/
 
-form {
-  position: relative;
-  background: white;
-  padding: 20px;
-  width: 420px;
-  z-index: 2;
-}
-
-label {
-  font-weight: 600;
-}
 
 
