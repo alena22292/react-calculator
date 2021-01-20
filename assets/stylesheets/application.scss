@@ -59,8 +59,16 @@ input.result {
   position: relative;
   max-width: 100vw;
   margin-right: 50px;
+  border: 2px solid #ddd;
 }
 
+.floaty-last {
+  position: absolute;
+  right: 50px;
+  z-index: 99;
+  top: 10px;
+  color: #aaa;
+}
 /* Show ***********************************************************************/
 
 form {
